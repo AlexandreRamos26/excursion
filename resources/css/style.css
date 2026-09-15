@@ -75,44 +75,19 @@ h2 {
 	color: #b4f8e5;
 }
 
-.phone {
-	position: relative;
-	width: 330px;
-	height: 690px;
-	margin: 38px auto 0;
-	padding: 72px 15px 70px;
-	border: 4px solid #9a9a9a;
-	border-radius: 48px;
-	background: #080808;
-	box-shadow: inset 0 0 0 2px #292929, 0 0 0 1px #575757;
+.video-wrapper,
+.image-wrapper {
+	margin: 0;
 }
 
-.phone::before {
-	position: absolute;
-	top: 31px;
-	left: 50%;
-	width: 64px;
-	height: 7px;
-	border-radius: 8px;
-	background: #1c1c1c;
-	content: "";
-	transform: translateX(-50%);
-}
-
-.phone-screen {
-	height: 100%;
-	background: url("https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=500&q=85") center / cover;
-}
-
-.home-button {
-	position: absolute;
-	bottom: 17px;
-	left: 50%;
-	width: 53px;
-	height: 53px;
-	border: 3px solid #3d3d3d;
-	border-radius: 50%;
-	transform: translateX(-50%);
+.excursion-video {
+	display: block;
+	width: 404px;
+	height: auto;
+	min-height: 240px;
+	max-width: 100%;
+	margin: 0 auto 35px;
+	background: #111;
 }
 
 .overview {
@@ -123,12 +98,16 @@ h2 {
 	margin-bottom: 29px;
 }
 
-.overview p {
+.overview > p {
 	margin-bottom: 20px;
 	color: var(--muted);
 	font-size: 1.3125rem;
 	font-weight: 700;
 	line-height: 1.4;
+}
+
+.overview > .video-wrapper {
+	margin-bottom: 0;
 }
 
 .camping-image {
@@ -170,14 +149,8 @@ footer {
 		margin-bottom: 25px;
 	}
 
-	.overview p {
+	.overview > p {
 		font-size: 1rem;
-	}
-
-	.phone {
-		width: min(76vw, 330px);
-		height: min(150vw, 690px);
-		border-radius: 10vw;
 	}
 
 	footer {
